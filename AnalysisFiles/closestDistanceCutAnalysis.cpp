@@ -9,7 +9,7 @@
 #include <iostream>
 
 void closestDistanceCutAnalysis(TString fileLocation = ""){
-	fileLocation = "/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/output/FinalThesis_irisClosed/";
+	fileLocation = "<Insert your path here>/";
 	TString inputFileName = "closestDistance.root";
 	
 	TString outputFileName = "closestDistanceCutAnalysis.pdf";
