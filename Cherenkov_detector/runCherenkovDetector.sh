@@ -1,9 +1,9 @@
 # To run cherenkov detector simulations
-sipmFileBase="\"/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/input_SiPM_pdes/"
+sipmFileBase="\"/input_SiPM_pdes/"
 
-outputFolderHe="\"/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/FinalThesis_irisClosed/helium\""
-paramFileBaseHe="\"/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/paramFiles/helium/"
-outputTxtBaseHe="/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/FinalThesis_irisClosed/helium/outputTxt"
+outputFolderHe="\"\""
+paramFileBaseHe="\"/paramFiles/helium/"
+outputTxtBaseHe="/helium/outputTxt"
 
 declare -a paramArr=("hamamatsu_3050cs" "hamamatsu_3075cs")
 for i in "${paramArr[@]}"
@@ -27,9 +27,9 @@ do
 	root -l -b -q "CherenkovDetector/cdEventVeto.cpp(${inputFolder}, ${outputFolderHe}, ${paramFileName}, ${sipmFileName}, \"${fileNameAddition}\", ${nEvents})" >> $outputTxtName
 done
 
-outputFolderNe="\"/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/FinalThesis_irisClosed/neon\""
-paramFileBaseNe="\"/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/paramFiles/neon/"
-outputTxtBaseNe="/misc/alidata150/alice_u/cas/O2Simulation/Analyze_events/train/CherenkovDetector/FinalThesis_irisClosed/neon/outputTxt"
+outputFolderNe="\"/neon\""
+paramFileBaseNe="\"/paramFiles/neon/"
+outputTxtBaseNe="/neon/outputTxt"
 
 for i in "${paramArr[@]}"
 do
