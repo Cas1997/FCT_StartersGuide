@@ -5,3 +5,7 @@ cd build
 cmake ..
 make
 ```
+To run
+```sh
+./FCT
+```
